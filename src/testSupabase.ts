@@ -1,4 +1,4 @@
-import supabase from '@supabase/supabaseClient';
+import supabase from "./supabaseClient.ts";
 
 async function testConnection() {
   const { data, error } = await supabase.from('ambassadors').select('*');
